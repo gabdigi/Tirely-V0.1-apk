@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tirely</title>
+
+<script>
+const firstLaunch = localStorage.getItem("tirely_first_launch");
+
+if(firstLaunch === null){
+    localStorage.setItem("tirely_first_launch","false");
+    window.location.replace("Onboarding.dc.html");
+}else{
+    window.location.replace("Tirely.dc.html");
+}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
